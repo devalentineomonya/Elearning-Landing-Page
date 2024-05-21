@@ -5,7 +5,7 @@ import MaxWidthContainer from "../MaxWidthContainer/MaxWidthContainer";
 const HomeHero = () => {
   return (
     <MaxWidthContainer>
-        <div className="flex h-[calc(70vh+4rem)]">
+        <div className="flex h-[calc(70vh+4rem)] flex-col lg:flex-row">
         <HeroImage />
         <HeroText />
     </div>
