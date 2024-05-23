@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MaxWidthContainer from "../MaxWidthContainer/MaxWidthContainer";
+import { Link } from "react-router-dom";
 const navbarLinks = [
   {
     name: "Home",
@@ -43,7 +44,10 @@ const Navbar = () => {
                   key={index}
                   className="text-slate-700 hover:text-slate-950 transition-all ease-in-out duration-300 font-semibold cursor-pointer mt-4 md:mt-0 text-xl text-"
                 >
+                  <Link to={navLink.href}>
                   {navLink.name}
+
+                  </Link>
                 </li>
               ))}
           </ul>
@@ -52,7 +56,7 @@ const Navbar = () => {
           <button className="rounded-full border px-4 py-2 border-blue-400 text-blue-400 font-semibold">
             Login/Signup
           </button>
-          <div onClick={()=>setIsOpen(prev=>!prev)}>
+          <div onClick={()=>setIsOpen(prev=>!prev)} className=" md:hidden block">
             menu
           </div>
         </div>
