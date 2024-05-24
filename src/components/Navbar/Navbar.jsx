@@ -35,8 +35,8 @@ const Navbar = () => {
     <MaxWidthContainer>
       <header className="w-full h-[4rem] flex justify-between items-center">
         <div className="font-bold text-2xl  text-slate-500">
-          <span className="text-purple-700">De</span>v
-          <span className="text-purple-500">Br</span>os
+          <span className="text-[#9380f6]">De</span>v
+          <span className="text-[#9380f6]">Br</span>os
         </div>
         <nav
           className={`fixed md:static  w-1/2 md:w-full bg-slate-50 top-[4rem] bottom-0  transition-all ease-in-out duration-300  ${
@@ -56,12 +56,12 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="flex justify-center items-center gap-x-3 pr-2">
-          <button className="rounded-full border px-4 py-2 border-blue-400 text-blue-400 font-semibold">
+          <button className="rounded-full border px-4 py-2 border-[#9380f6] text-[#9380f6] font-semibold">
             Login/Signup
           </button>
           <div
             onClick={() => setIsOpen((prev) => !prev)}
-            className=" md:hidden block cursor-pointer"
+            className=" md:hidden block cursor-pointer text-[#9380f6] "
 
           >
             {isOpen ? <HiX size={36} /> : <HiOutlineMenuAlt4 size={36} />}{" "}

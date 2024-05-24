@@ -14,7 +14,7 @@ const OurPartners = () => {
         adipisicing quis duis magna reprehenderit do qui cupidatat. Ullamco
         adipisicing eiusmod ex nulla laboris cupidatat. Duis consequat cillum
       </p>
-      <button className=" mt-4 flex items-center py-3 px-6 rounded-full gap-x-3 font-semibold text-gray-50  bg-yellow-400">
+      <button className=" mt-4 flex items-center py-3 px-6 rounded-full gap-x-3 font-semibold text-gray-50  bg-[#fdb802]">
         <FaRegSquarePlus size={20}/> More About Us
       </button>
       <div className="flex items-center gap-x-4 mt-8">
