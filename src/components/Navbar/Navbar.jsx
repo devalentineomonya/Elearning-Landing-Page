@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import MaxWidthContainer from "../MaxWidthContainer/MaxWidthContainer";
 import { Link } from "react-router-dom";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { HiX } from "react-icons/hi";
 const navbarLinks = [
   {
     name: "Home",
@@ -36,7 +38,11 @@ const Navbar = () => {
           <span className="text-purple-700">De</span>v
           <span className="text-purple-500">Br</span>os
         </div>
-        <nav className={`fixed md:static  w-1/2 md:w-full bg-slate-50 top-[4rem] bottom-0  transition-all ease-in-out duration-300  ${isOpen ? "right-0" : "-right-1/2"}`}>
+        <nav
+          className={`fixed md:static  w-1/2 md:w-full bg-slate-50 top-[4rem] bottom-0  transition-all ease-in-out duration-300  ${
+            isOpen ? "right-0" : "-right-1/2"
+          }`}
+        >
           <ul className="flex items-start md:justify-center pl-4 md:pl-0 flex-col md:flex-row gap-x-6 ">
             {navbarLinks &&
               navbarLinks.map((navLink, index) => (
@@ -44,10 +50,7 @@ const Navbar = () => {
                   key={index}
                   className="text-slate-700 hover:text-slate-950 transition-all ease-in-out duration-300 font-semibold cursor-pointer mt-4 md:mt-0 text-xl text-"
                 >
-                  <Link to={navLink.href}>
-                  {navLink.name}
-
-                  </Link>
+                  <Link to={navLink.href}>{navLink.name}</Link>
                 </li>
               ))}
           </ul>
@@ -56,8 +59,12 @@ const Navbar = () => {
           <button className="rounded-full border px-4 py-2 border-blue-400 text-blue-400 font-semibold">
             Login/Signup
           </button>
-          <div onClick={()=>setIsOpen(prev=>!prev)} className=" md:hidden block">
-            menu
+          <div
+            onClick={() => setIsOpen((prev) => !prev)}
+            className=" md:hidden block cursor-pointer"
+
+          >
+            {isOpen ? <HiX size={36} /> : <HiOutlineMenuAlt4 size={36} />}{" "}
           </div>
         </div>
       </header>

@@ -9,7 +9,9 @@ const OurPartners = () => {
       <h1 className="text-5xl font-semibold text-slate-900 mt-4 ">
         Together to Inspire Freashiers
       </h1>
-      <p></p>
+      <p>
+        
+      </p>
     </div>
   );
 };
