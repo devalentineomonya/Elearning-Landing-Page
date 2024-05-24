@@ -5,8 +5,8 @@ const HomeHero = () => {
   return (
     
         <div className="flex h-[calc(70vh+4rem)] flex-col lg:flex-row">
-        <HeroImage />
         <HeroText />
+        <HeroImage />
     </div>
       
   );
