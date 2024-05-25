@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import curveArrow from "../../assets/curve-arrow.png";
 const ReachOutText = () => {
   return (
-    <div className="relative flex justify-center items-start flex-col flex-1">
+    <div className="relative flex justify-center items-start flex-col flex-1 min-h-96">
       <img src={curveArrow} className="absolute top-0 right-0 w-48" />
       <div className="mt-[150px] lg:mt-0">
         <h1 className="text-slate-950 font-semibold text-4xl mb-4">
