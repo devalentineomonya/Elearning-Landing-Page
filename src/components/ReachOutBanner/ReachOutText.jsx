@@ -14,13 +14,20 @@ const ReachOutText = () => {
           reprehenderit dolore veniam enim. Labore ea ad ipsum sint enim
           commodo.{" "}
         </p>
-        <button className="flex items-center py-3 px-4 rounded-full bg-[#7a68d6] text-white font-semibold gap-x-1 mt-4">
-          <MdArrowOutward size={24} />
-          <span>Get started - It's Free</span>
-        </button>
+
+       <GetStarted/>
       </div>
     </div>
   );
 };
+
+export const GetStarted=()=>{
+  return(
+    <button className="flex items-center py-3 px-4 rounded-full bg-[#7a68d6] text-white font-semibold gap-x-1 mt-4">
+    <MdArrowOutward size={24} />
+    <span>Get started - It's Free</span>
+  </button>
+  )
+}
 
 export default ReachOutText;
