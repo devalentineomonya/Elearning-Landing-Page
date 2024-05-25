@@ -2,7 +2,7 @@ import React from "react";
 import { FaAmazon, FaGoogle, FaRegSquarePlus, FaSlack, FaYoutube } from "react-icons/fa6";
 const OurPartners = () => {
   return (
-    <div className="w-full h-[60vh] bg-gray-200  rounded-xl flex items-center flex-col py-24">
+    <div className="w-full h-fit lg:h-[60vh] bg-gray-200  rounded-xl flex items-center flex-col py-24">
       <h1 className="text-5xl font-semibold text-slate-900  ">
         We connect worlds Career Exparts
       </h1>
