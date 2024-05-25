@@ -1,0 +1,8 @@
+.react-out-image{
+    background: url("../../../assets/pattern3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
