@@ -4,7 +4,7 @@ const JoinSectionText = () => {
   return (
     <div className=" flex flex-1 flex-col">
       <h1 className="text-slate-950 font-semibold text-4xl mb-4">
-        Find a perfect group to expand your Knowledge.{" "}
+        Find a perfect group to expand your Knowledge.
       </h1>
       <p className="text-sm text-slate-700">
         Labore sint ad reprehenderit tempor. Enim occaecat fugiat officia
@@ -12,7 +12,7 @@ const JoinSectionText = () => {
         eiusmod.
       </p>
       <button className="flex items-center py-3 px-4 rounded-full bg-[#fdb802] text-white font-semibold gap-x-1 mt-4">
-        <HiOutlineUserGroup /> Join Group{" "}
+        <HiOutlineUserGroup /> Join Group
       </button>
     </div>
   );
