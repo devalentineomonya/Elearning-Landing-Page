@@ -58,23 +58,22 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3,
+    slidesToSlide: 1,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1024, min: 576 },
     items: 2,
-    slidesToSlide: 2,
+    slidesToSlide: 1,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 576, min: 0 },
     items: 1,
     slidesToSlide: 1,
   },
 };
 
 const EventsSection = () => {
-  const CustomLeftArrow =({ onClick }) => {
- 
+  const CustomLeftArrow = ({ onClick }) => {
     return (
       <div onClick={() => onClick()} className="cursor-pointer">
         <FaArrowLeft size={24} />
@@ -82,8 +81,7 @@ const EventsSection = () => {
     );
   };
 
-  const CustomRightArrow =({ onClick }) => {
- 
+  const CustomRightArrow = ({ onClick }) => {
     return (
       <div onClick={() => onClick()} className="cursor-pointer">
         <FaArrowRight size={24} />

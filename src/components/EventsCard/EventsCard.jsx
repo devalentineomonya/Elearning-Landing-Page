@@ -2,7 +2,7 @@ import React from "react";
 const EventsCard = ({eventItem}) => {
 
   return (
-    <div className="w-full aspect-square">
+    <div className="w-[calc(100%-25px)] aspect-square">
       <div className="h-1/2 relative">
         <img src={eventItem.image} className="absolute w-full h-full rounded-xl " />
       </div>
