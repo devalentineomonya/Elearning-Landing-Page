@@ -14,3 +14,6 @@
     height:100%;
 
 }
+.oval-background{
+    border-radius:95% 5% 96% 4% / 96% 5% 98% 4%;
+}
