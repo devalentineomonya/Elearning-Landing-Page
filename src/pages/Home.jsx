@@ -5,6 +5,7 @@ import EventsSection from "../components/EventsSection/EventsSection";
 import OurPartners from "../components/OurPartners/OurPartners";
 import ReachOutBanner from "../components/ReachOutBanner/ReachOutBanner";
 import JoinGroupSection from "../components/JoinGroupSection/JoinGroupSection";
+import FeatureSection from "../components/FeatureSection/FeatureSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <OurPartners/>
       <ReachOutBanner/>
       <JoinGroupSection/>
+      <FeatureSection/>
     </MaxWidthContainer>
   );
 };
