@@ -10,12 +10,12 @@ const featureItems = [
   },
   {
     name:"Unlimited Events",
-    description:" veniam duis dolore cillum sint incididunt non anim laborum exercitation laboris commodo do culpa."
+    description:" non anim laborum exercitation laboris commodo do culpa."
 
   },
   {
     name:"Start Free Group",
-    description:" veniam duis dolore cillum sint incididunt non anim laborum exercitation laboris commodo do culpa."
+    description:" non anim laborum exercitation laboris commodo do culpa."
   }
 ];
 
