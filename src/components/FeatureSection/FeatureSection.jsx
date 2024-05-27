@@ -18,7 +18,7 @@ const FeatureSection = () => {
           velit proident consectetur.
         </p>
       </div>
-      <div className="grid grid-cols-3  gap-x-3 bg-green-500 w-[90%] md:w-[70%] ">
+      <div className="grid grid-cols-3  gap-x-3  w-[90%] md:w-[70%] ">
         <FeatureCard />
         <FeatureCard />
         <FeatureCard />
