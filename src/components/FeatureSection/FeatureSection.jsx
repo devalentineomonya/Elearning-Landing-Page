@@ -9,14 +9,13 @@ const featureItems = [
       "Pariatur aute sit dolore duis do incididunt et est sint mollit. Elit fugiat ipsum ",
   },
   {
-    name:"Unlimited Events",
-    description:" non anim laborum exercitation laboris commodo do culpa."
-
+    name: "Unlimited Events",
+    description: " non anim laborum exercitation laboris commodo do culpa.",
   },
   {
-    name:"Start Free Group",
-    description:" non anim laborum exercitation laboris commodo do culpa."
-  }
+    name: "Start Free Group",
+    description: " non anim laborum exercitation laboris commodo do culpa.",
+  },
 ];
 
 const FeatureSection = () => {
@@ -36,15 +35,9 @@ const FeatureSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-3  gap-x-3  w-[90%] md:w-[70%] ">
-    
-    {
-      featureItems.map((featureItem,index) =>(
-        
-        <FeatureCard featureItem={featureItem} />
-      ))
-    }   
-    
-    
+        {featureItems.map((featureItem, index) => (
+          <FeatureCard featureItem={featureItem}  key={index}/>
+        ))}
       </div>
       <GetStarted />
     </div>
