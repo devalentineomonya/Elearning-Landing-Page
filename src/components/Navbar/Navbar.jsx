@@ -48,7 +48,7 @@ const Navbar = () => {
               navbarLinks.map((navLink, index) => (
                 <li
                   key={index}
-                  className="text-slate-700 hover:text-slate-950 transition-all ease-in-out duration-300 font-semibold cursor-pointer mt-4 md:mt-0 text-xl text-"
+                  className="text-slate-700 hover:text-slate-950 transition-all ease-in-out duration-300 font-semibold cursor-pointer mt-4 md:mt-0 text-xl"
                 >
                   <Link to={navLink.href}>{navLink.name}</Link>
                 </li>
