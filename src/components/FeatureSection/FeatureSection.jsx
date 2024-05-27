@@ -2,6 +2,23 @@ import React from "react";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import { GetStarted } from "../ReachOutBanner/ReachOutText";
 
+const featureItems = [
+  {
+    title: "Can Join Group",
+    description:
+      "Pariatur aute sit dolore duis do incididunt et est sint mollit. Elit fugiat ipsum ",
+  },
+  {
+    name:"Unlimited Events",
+    description:"esse velit. Consectetur aute culpa esse sint tempor pariatur ad consectetur do aute mollit est laborum. Ipsum veniam duis dolore cillum sint incididunt non anim laborum exercitation laboris commodo do culpa."
+
+  },
+  {
+    name:"Start Free Group",
+    description:"esse velit. Consectetur aute culpa esse sint tempor pariatur ad consectetur do aute mollit est laborum. Ipsum veniam duis dolore cillum sint incididunt non anim laborum exercitation laboris commodo do culpa."
+  }
+];
+
 const FeatureSection = () => {
   return (
     <div className="w-full h-fit lg:h-[80vh] bg-gray-200  rounded-xl flex items-center flex-col py-24">
@@ -19,9 +36,15 @@ const FeatureSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-3  gap-x-3  w-[90%] md:w-[70%] ">
-        <FeatureCard />
-        <FeatureCard />
-        <FeatureCard />
+    
+    {
+      featureItems.map((featureItem,index) =>(
+        
+        <FeatureCard featureItem={featureItem} />
+      ))
+    }   
+    
+    
       </div>
       <GetStarted />
     </div>
